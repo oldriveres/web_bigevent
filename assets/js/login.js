@@ -64,7 +64,8 @@ $(function() {
                 }
                 layer.msg('登录成功！');
                 // 将登录成功得到的token字符串，保存到localStorage中
-                // 跳转到后台主页
+                localStorage.setItem('token', res.token)
+                    // 跳转到后台主页
                 location.href = '/index.html'
             }
         });
